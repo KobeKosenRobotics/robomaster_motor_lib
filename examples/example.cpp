@@ -2,7 +2,7 @@
 #include <RobomasterMotorHandler.h>
 #include <RobomasterMotor.h>
 
-using robomaster_motor_lib;
+using namespace robomaster_motor_lib;
 
 RobomasterMotorHandler handler(&Can0);
 RobomasterMotor motor(1);
