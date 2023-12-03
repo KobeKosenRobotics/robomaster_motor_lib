@@ -14,26 +14,41 @@ namespace robomaster_motor_lib
             // ID
             inline int GetId(){ return _id; }
 
-            // Target Current
+            /// @brief 
+            /// @param target_current [A]
             inline void SetTargetCurrent(double target_current) { _target_current_bit = constrain(target_current * _current_coef, -16384, 16384); }
             inline int GetTargetCurrentBit() { return _target_current_bit; }
 
-            // Angle
             void UpdateAngle(int angle_bit);
+
+            /// @brief 
+            /// @return [deg]
             inline double GetRawAngle() { return _angle_raw; }
+
+            /// @brief 
+            /// @return [deg] 
             inline double GetIncrementalAngle() { return _angle_incremental; }
+
+            /// @brief 
+            /// @return []
             inline int GetRoundCount() { return _round_count; }
 
-            // Velocity
             inline void UpdateVelocity(int velocity_bit) { _velocity = (double)velocity_bit * _velocity_coef * _reduction_ratio_inv; }
+            
+            /// @brief 
+            /// @return [rad/s]
             inline double GetVelocity() { return _velocity; }
 
-            // Current
             inline void UpdateCurrent(int current_bit) { _current = (double)current_bit * _current_coef_inv; }
+            
+            /// @brief 
+            /// @return [A]
             inline double GetCurrent() { return _current; }
 
-            // Temperature
             inline void UpdateTemperature(int temperature_bit) { _temperature = temperature_bit; }
+            
+            /// @brief 
+            /// @return degree celsius
             inline int GetTemperature() { return _temperature; }
 
         private:
