@@ -1,0 +1,34 @@
+\doxysection{Robomaster\+Motor\+Handler.\+h}
+\hypertarget{_robomaster_motor_handler_8h_source}{}\label{_robomaster_motor_handler_8h_source}\index{RobomasterMotorHandler.h@{RobomasterMotorHandler.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ROBOMASTER\_MOTOR\_LIB\_ROBOMASTER\_MOTOR\_HANDLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ROBOMASTER\_MOTOR\_LIB\_ROBOMASTER\_MOTOR\_HANDLER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <FlexCAN.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RobomasterMotor.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }robomaster\_motor\_lib}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_handler}{RobomasterMotorHandler}}}
+\DoxyCodeLine{00010\ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_handler}{RobomasterMotorHandler}}();}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_handler}{RobomasterMotorHandler}}(FlexCAN*\ can);}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ AddMotor(\mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor}{RobomasterMotor}}*\ motor);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Update();}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Read();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Write(\textcolor{keywordtype}{bool}\ part);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ FlexCAN*\ \_can;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor}{RobomasterMotor}}*\ \_motors[8];}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \};\ \textcolor{comment}{//\ class\ RobomasterMotorHandler}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \};\ \textcolor{comment}{//\ namespace\ robomaster\_motor\_lib}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
