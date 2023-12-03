@@ -18,60 +18,61 @@
 \DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ID}}
 \DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ GetId()\{\ \textcolor{keywordflow}{return}\ \_id;\ \}}
 \DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Target\ Current}}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ SetTargetCurrent(\textcolor{keywordtype}{double}\ target\_current)\ \{\ \_target\_current\_bit\ =\ constrain(target\_current\ *\ \_current\_coef,\ -\/16384,\ 16384);\ \}}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ GetTargetCurrentBit()\ \{\ \textcolor{keywordflow}{return}\ \_target\_current\_bit;\ \}}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Angle}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_a1c1c705ac0bdb0b501285664a0b35c16}{SetTargetCurrent}}(\textcolor{keywordtype}{double}\ target\_current)\ \{\ \_target\_current\_bit\ =\ constrain(target\_current\ *\ \_current\_coef,\ -\/16384,\ 16384);\ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ GetTargetCurrentBit()\ \{\ \textcolor{keywordflow}{return}\ \_target\_current\_bit;\ \}}
+\DoxyCodeLine{00021\ }
 \DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateAngle(\textcolor{keywordtype}{int}\ angle\_bit);}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ GetRawAngle()\ \{\ \textcolor{keywordflow}{return}\ \_angle\_raw;\ \}}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ GetIncrementalAngle()\ \{\ \textcolor{keywordflow}{return}\ \_angle\_incremental;\ \}}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ GetRoundCount()\ \{\ \textcolor{keywordflow}{return}\ \_round\_count;\ \}}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Velocity}}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ UpdateVelocity(\textcolor{keywordtype}{int}\ velocity\_bit)\ \{\ \_velocity\ =\ (double)velocity\_bit\ *\ \_velocity\_coef\ *\ \_reduction\_ratio\_inv;\ \}}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ GetVelocity()\ \{\ \textcolor{keywordflow}{return}\ \_velocity;\ \}}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current}}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ UpdateCurrent(\textcolor{keywordtype}{int}\ current\_bit)\ \{\ \_current\ =\ (double)current\_bit\ *\ \_current\_coef\_inv;\ \}}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ GetCurrent()\ \{\ \textcolor{keywordflow}{return}\ \_current;\ \}}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Temperature}}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ UpdateTemperature(\textcolor{keywordtype}{int}\ temperature\_bit)\ \{\ \_temperature\ =\ temperature\_bit;\ \}}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ GetTemperature()\ \{\ \textcolor{keywordflow}{return}\ \_temperature;\ \}}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_id;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_a826244fbbf87321ae36a54d46f6367f6}{GetRawAngle}}()\ \{\ \textcolor{keywordflow}{return}\ \_angle\_raw;\ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_a3076e7caffac63f3436ca37693488233}{GetIncrementalAngle}}()\ \{\ \textcolor{keywordflow}{return}\ \_angle\_incremental;\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_a979062a5ac9812ed94f9967bf06e5593}{GetRoundCount}}()\ \{\ \textcolor{keywordflow}{return}\ \_round\_count;\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ UpdateVelocity(\textcolor{keywordtype}{int}\ velocity\_bit)\ \{\ \_velocity\ =\ (double)velocity\_bit\ *\ \_velocity\_coef\ *\ \_reduction\_ratio\_inv;\ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_a06bc07d6f501d2244e4d08ee66079507}{GetVelocity}}()\ \{\ \textcolor{keywordflow}{return}\ \_velocity;\ \}}
 \DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_reduction\_ratio\ =\ 19.20;\ \textcolor{comment}{//\ =\ 3591\ /\ 187}}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_reduction\_ratio\_inv\ =\ 0.05207;\ \textcolor{comment}{//\ =\ 187\ /\ 3591}}
-\DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Target\ Current}}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_target\_current\_bit;}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_current\_coef\ =\ 819.2;\ \ \textcolor{comment}{//\ =\ 16384\ /\ 20[A]}}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Angle}}
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_angle\_raw;}
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_angle\_incremental;}
-\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_round\_count;}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_angle\_bit\_last;}
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_angle\_coef\ =\ 0.04395;\ \textcolor{comment}{//\ 360[deg]\ /\ 8192}}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Velocity}}
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_velocity;}
-\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_velocity\_coef\ =\ 0.1047;\ \textcolor{comment}{//\ =\ 2π\ /\ 60}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ UpdateCurrent(\textcolor{keywordtype}{int}\ current\_bit)\ \{\ \_current\ =\ (double)current\_bit\ *\ \_current\_coef\_inv;\ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_a5fde1a7106b773c9cca053e69219b612}{GetCurrent}}()\ \{\ \textcolor{keywordflow}{return}\ \_current;\ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ UpdateTemperature(\textcolor{keywordtype}{int}\ temperature\_bit)\ \{\ \_temperature\ =\ temperature\_bit;\ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classrobomaster__motor__lib_1_1_robomaster_motor_a86b82a355a0e75c26170d9bdc273c197}{GetTemperature}}()\ \{\ \textcolor{keywordflow}{return}\ \_temperature;\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_id;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_reduction\_ratio\ =\ 19.20;\ \textcolor{comment}{//\ =\ 3591\ /\ 187}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_reduction\_ratio\_inv\ =\ 0.05207;\ \textcolor{comment}{//\ =\ 187\ /\ 3591}}
 \DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current}}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_current;}
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_current\_coef\_inv\ =\ 0.001221;\ \textcolor{comment}{//\ 20[A]\ /\ 16384}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Target\ Current}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_target\_current\_bit;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_current\_coef\ =\ 819.2;\ \ \textcolor{comment}{//\ =\ 16384\ /\ 20[A]}}
 \DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Temperature}}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_temperature;}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00067\ \ \ \ \ \};\ \textcolor{comment}{//\ class\ RobomasterMotor}}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ \};\ \textcolor{comment}{//\ robomaster\_motor\_lib}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Angle}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_angle\_raw;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_angle\_incremental;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_round\_count;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_angle\_bit\_last;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_angle\_coef\ =\ 0.04395;\ \textcolor{comment}{//\ 360[deg]\ /\ 8192}}
 \DoxyCodeLine{00070\ }
-\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Velocity}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_velocity;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_velocity\_coef\ =\ 0.1047;\ \textcolor{comment}{//\ =\ 2π\ /\ 60}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_current;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \_current\_coef\_inv\ =\ 0.001221;\ \textcolor{comment}{//\ 20[A]\ /\ 16384}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Temperature}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_temperature;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \};\ \textcolor{comment}{//\ class\ RobomasterMotor}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \};\ \textcolor{comment}{//\ robomaster\_motor\_lib}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}
